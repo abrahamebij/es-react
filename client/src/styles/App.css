@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+  html{
+    scroll-behavior: smooth;
+  }
+  body{
+    @apply bg-gray-100 dark:bg-gray-800 dark:text-white
+  }
+  body::before{
+    display: block;
+    content: '';
+    height: 58.1406px;
+  }
+  .form-input{
+    @apply border border-gray-300 focus:border-gray-400 dark:border-gray-500 dark:focus:border-gray-400 px-2 py-3 rounded-md w-full mt-1 bg-gray-100 dark:bg-gray-700;
+  }
+  button, input, textarea, select, option{
+    @apply outline-0 dark:placeholder-gray-500
+  }
+}
+
