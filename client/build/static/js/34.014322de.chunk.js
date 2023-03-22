@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_app=self.webpackChunkreact_app||[]).push([[34],{8034:function(t,a,e){e.r(a);var i=e(623),c=e(184);a.default=function(){return(0,c.jsx)(i.E.div,{className:"text-5xl tracking-widest text-center mt-8 mb-10",initial:{opacity:0},animate:{opacity:1},exit:{translateX:"40px",opacity:0},children:"404"})}}}]);
+//# sourceMappingURL=34.014322de.chunk.js.map
