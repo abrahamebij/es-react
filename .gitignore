@@ -1,3 +1,6 @@
+*/src
+
+
 # Logs
 logs
 *.log
@@ -40,6 +43,8 @@ client/build/Release
 
 # Dependency directories
 client/node_modules/
+*/src/
+node_modules/
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
