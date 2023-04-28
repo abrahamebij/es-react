@@ -1,12 +1,12 @@
 import Head from "../../components/Head";
+import Hero from '../../components/Hero'
+
 function Give() {
   return (
     <>
     <Head title='Online Giving'/>
-    <div>
-      Give with your substance
-    </div>
-    <p className="text-2xl font-semibold">Not ready yet...</p>
+    <Hero title='Online Giving' />
+    
     </>
   )
 }
