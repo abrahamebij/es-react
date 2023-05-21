@@ -67,6 +67,12 @@ function ColorSet() {
         .dark .caret-primary {
           caret-color: ${colors[color].dark}; 
         }
+        .border-primary {
+          border-color: ${colors[color].light}; 
+        }
+        .dark .caret-primary {
+          border-color: ${colors[color].dark}; 
+        }
         .home-underline::after {
           content: '';
           display: block;

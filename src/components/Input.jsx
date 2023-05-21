@@ -68,7 +68,7 @@ function Area(props) {
       <textarea
         id={props.for}
         name={props.for}
-        className={`w-full text-gray-600 dark:text-gray-400 dark:bg-slate-900 dark:border-gray-600 border border-gray-300 focus:border-gray-400 px-3 py-1 rounded-md caret-primary h-32 lg:h-48 resize-none ${props.AreaClassName}`}
+        className={`w-full text-gray-600 dark:text-gray-400 dark:bg-slate-900 dark:border-gray-600 border border-gray-300 focus:border-gray-400 px-3 py-1 rounded-md caret-primary h-32 lg:h-52 resize-none ${props.AreaClassName}`}
         placeholder={props.placeholder}
         minLength={props.minLength}
       >

@@ -1,8 +1,8 @@
 import Card from "./Card";
 import OCard from "./OCard";
-import pic from "../../img/praise.webp";
 import { days, hrs, mins, secs } from "../../configs/formatter";
 import { useState } from "react";
+import {HashRouter} from 'react-router-dom'
 
 function Schedule() {
   // Get next day unless if today is that day.
@@ -63,7 +63,7 @@ function Schedule() {
       <h2 className="font-bold dark:text-white text-3xl text-center mb-7 home-underline">
         Schedule
       </h2>
-      <div className="flex items-center justify-around gap-x-5">
+      <div className="flex flex-col md:flex-row gap-y-5 items-center justify-center gap-x-5">
         <div className="w-full">
           <h2 className="font-bold dark:text-white text-xl underline p-2">
             Main Services
@@ -95,16 +95,17 @@ function Schedule() {
           <h2 className="font-bold dark:text-white text-xl underline p-2 mt-8">
             Other Services
           </h2>
-          <OCard value="7 DAYS OF GLORY" desc="Last full week of the month" />
+          <OCard value="7 DAYS OF GLORY" desc="Last full week of the month (6pm)" />
           <OCard value="Youth Sunday" desc="Third Sunday of the month (10am)" />
         </div>
-        {/* Image */}
-        <div className="w-2/3 hidden md:block">
-          <img src={pic} alt="" />
+        
+        {/* Map */}
+        <div className="">
+        <iframe title="Emmanuel Sanctuary's Location" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d990.7293085319358!2d3.305944987978656!3d6.657179962738949!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b96d234cde637%3A0x52a6f2e8628ef7b1!2sEmmanuel%20Sanctuary!5e0!3m2!1sen!2sng!4v1683297307099!5m2!1sen!2sng" width="360" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
-  );
+    );
 }
 
 export default Schedule;

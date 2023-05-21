@@ -1,7 +1,11 @@
-import { Btn } from "../../components/Link";
+// import { Btn } from "../../components/Link";
+import Button from "../../components/Button";
 import { FaArrowRight } from "react-icons/fa";
 
 function Hero(props) {
+  function toSchedule() {
+    window.scrollTo(0, 1150)
+  }
   return (
     <section
       className={`relative bg-black/60 bg-cross lg:bg-black/40 bg-cover bg-center text-gray-50 bg-blend-darken`}
@@ -14,11 +18,12 @@ function Hero(props) {
           </h1>
           <p>{props.desc}</p>
           
-          {props.btn && <Btn
+          {props.btn && <Button
             value="Join Us"
-            href="#schedule"
+            href="/#schedule"
             className="!bg-primary !text-gray-100 rounded-sm mx-auto mt-3"
             icon={<FaArrowRight className="animate-right" />}
+           onClick={toSchedule}
           />}
         </div>
       </div>

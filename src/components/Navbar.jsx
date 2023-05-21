@@ -7,6 +7,7 @@ import {
   FaHeart,
   FaHome,
   FaPager,
+  FaQuestion,
   FaTimes,
 } from "react-icons/fa";
 import { NavLink } from "./Link";
@@ -97,10 +98,16 @@ function Sidebar() {
           </div>
 
           <ul className="pt-5 flex flex-col gap-y-3 lg:gap-y-4">
-            <NavLink
+          <NavLink
               value="Home"
               href="/"
               icon={<FaHome />}
+              onClick={closeBar}
+            />
+            <NavLink
+              value="About"
+              href="/about"
+              icon={<FaQuestion />}
               onClick={closeBar}
             />
               <NavLink

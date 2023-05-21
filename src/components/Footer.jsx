@@ -75,6 +75,9 @@ function Footer() {
             <li>
               <TextLink value="Our Beliefs" href='/our-beliefs' />
             </li>
+            <li>
+              <TextLink value="Our History" href='/our-history' />
+            </li>
           </ul>
         </div>
  

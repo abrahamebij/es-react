@@ -31,3 +31,10 @@ html.dark img {
 .bg-praise{
 	background-image: url('../img/praise.webp');
 }
+
+.animate-spin {
+	animation: spin 2700ms infinite linear;
+}
+@keyframes spin {
+	to {transform: rotate(360deg);}
+}
